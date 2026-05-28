@@ -1,10 +1,46 @@
-<<<<<<< HEAD
 # FRB_pdf_LSS
-=======
-This code is designed to calculate the one-point PDF of DM based on the baryonification framework(https://arxiv.org/pdf/2507.07892). The relevant formulas and theoretical background can be found in (https://arxiv.org/pdf/2601.18784).
 
-The repository consists of two files:
-1- pdf: the full version of the code optimized for running on the Marvin HPC system(https://wiki.hpc.uni-bonn.de/). It can, of course, be adapted to other computing environments.
-2- Test_notebook: a lightweight notebook version of "pdf" that can be run on a personal computer. The numerical resolutions are intentionally reduced, so the results are not intended for precision analyses; however, it provides a useful starting point for becoming familiar with the functions and numerical methods used throughout the code.
-To run this code, the BFC code is required as a prerequisite.
->>>>>>> master
+This repository implements the computation of the one-point probability distribution function (PDF) of dispersion measure (DM) within the baryonification framework(https://arxiv.org/pdf/2507.07892). The relevant formulas and theoretical background can be found in (https://arxiv.org/pdf/2601.18784).
+
+---
+
+## 📁 Repository Structure
+
+The repository contains two main components:
+
+### 1. `pdf`
+A full implementation of the code, optimized for execution on the Marvin HPC system(https://wiki.hpc.uni-bonn.de/).
+
+This version is designed for high-performance computation and large-scale runs, but can be adapted to other computing environments if needed.
+
+---
+
+### 2. `Test_notebook`
+A lightweight Jupyter notebook version of the `pdf` code, intended for execution on a personal computer.
+
+- Reduced numerical resolution for faster runtime  
+- Not intended for precision scientific analysis  
+- Useful for understanding the structure of the code, functions, and numerical methods  
+
+---
+
+## ⚙️ Requirements
+
+To run this code, the **BFC code** is required as a prerequisite.
+
+---
+
+## 📌 Notes
+
+- The HPC version (`pdf`) is intended for production-level computations.  
+- The notebook version is intended for learning, testing, and exploration.  
+- Results from the notebook should be treated as qualitative rather than quantitative.
+
+---
+
+## 📚 References
+
+- Baryonification framework: https://arxiv.org/pdf/2507.07892  
+- Theoretical background: https://arxiv.org/pdf/2601.18784  
+
+---
