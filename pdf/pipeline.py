@@ -4,7 +4,7 @@ import os
 import re
 import glob
 import numpy as np
-import Y
+import spectrum as specYvec
 import pdfgen
 
 
@@ -73,7 +73,7 @@ def run_pipeline(params):
     except:
         print("spectum does not exist")
         return np.full(1000,np.nan)
-    Y.data_generator(params[0:6]).Yvec()
+    specYvec.data_generator(params[0:6]).Yvec()
     wait_for_npy("hb.npy")
     try:
         pdf, plambda = pdfgen.final_result(params[0:6])

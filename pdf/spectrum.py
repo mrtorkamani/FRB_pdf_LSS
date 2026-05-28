@@ -99,16 +99,16 @@ class data_generator():
         z_max = self.z_frb
         M_values= np.logspace(M_min,M_max,self.M_resolution) 
         z_values= np.linspace(0.0001,z_max,self.z_resolution)
-        ahd = np.zeros((self.M_resolution,self.z_resolution))
-        hb = np.zeros((self.M_resolution,self.z_resolution))
+        ahd = np.zeros((self.z_resolution,self.M_resolution))
+        hb = np.zeros((self.z_resolution,self.M_resolution))
         
         #vectorizing the angular halo density
         for i,z in enumerate(z_values):
-            ahd[:,i] = self.ang_halo_density(M_values,z)
+            ahd[i,:] = self.ang_halo_density(M_values,z)
         np.save("ahd.npy", ahd)
         #vectorizing the halo bias
         for i,z in enumerate(z_values):
-            hb[:,i] = self.halo_bias(M_values,z)
+            hb[i,:] = self.halo_bias(M_values,z)
         np.save("hb.npy", hb)
 
 
