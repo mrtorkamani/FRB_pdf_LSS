@@ -105,11 +105,11 @@ class data_generator():
         #vectorizing the angular halo density
         for i,z in enumerate(z_values):
             ahd[i,:] = self.ang_halo_density(M_values,z)
-        np.save("ahd.npy", ahd)
+        np.save("10/ahd.npy", ahd)
         #vectorizing the halo bias
         for i,z in enumerate(z_values):
             hb[i,:] = self.halo_bias(M_values,z)
-        np.save("hb.npy", hb)
+        np.save("10/hb.npy", hb)
 
 
 #parallel run for Y

@@ -13,6 +13,15 @@ A full implementation of the code, optimized for execution on the Marvin HPC sys
 
 This version is designed for high-performance computation and large-scale runs, but can be adapted to other computing environments if needed.
 
+#### Running the code
+
+1. Configure the desired BFC parameters in `pipeline.py`.
+2. Submit the job to the scheduler:
+
+```bash
+sbatch start.sh
+```
+
 ---
 
 ### 2. `Test_notebook`
