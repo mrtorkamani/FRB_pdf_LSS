@@ -24,8 +24,6 @@ A lightweight Jupyter notebook version of the `pdf` code, intended for execution
 
 ---
 
----
-
 ### 3. `Emulator`
 This emulator was used to run the MCMC analysis and fit the PDFs.
 
