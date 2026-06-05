@@ -24,6 +24,15 @@ A lightweight Jupyter notebook version of the `pdf` code, intended for execution
 
 ---
 
+---
+
+### 3. `Emulator`
+This emulator was used to run the MCMC analysis and fit the PDFs.
+
+Users should be aware that the emulator may be less accurate at very low DM values.
+
+---
+
 ## ⚙️ Requirements
 
 To run this code, the **BFC code** is required as a prerequisite.
